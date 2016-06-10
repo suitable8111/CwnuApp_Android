@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/barcode_popup_element"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="320dp"
+    android:paddingTop="100dp"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp"
+    android:background="#88414040"
+    android:orientation="vertical"
+    android:layout_weight="5">
+
+    <!--<TextView-->
+        <!--android:background="@color/cwnu_main_color10"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="40dp"-->
+        <!--android:text="학번"-->
+        <!--android:textColor="@color/cwnu_main_color9"-->
+        <!--android:gravity="bottom|center"-->
+        <!--android:id="@+id/pop_up_barcode_textview" />-->
+
+    <!--<ImageView-->
+        <!--android:background="@color/cwnu_main_color10"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:id="@+id/user_school_barcode_imageView"-->
+        <!--/>-->
+
+
+
+
+</LinearLayout>

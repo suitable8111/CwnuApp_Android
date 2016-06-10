@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="kakao_app_key">4bba558c912f9461a102937476cf3d9a</string>
+    <string name="kakao_scheme">kakao4bba558c912f9461a102937476cf3d9a</string>
+    <string name="kakao_host">usermgmt</string>
+    <string name="gcm_project_number">78016239527</string>
+</resources>
+
+

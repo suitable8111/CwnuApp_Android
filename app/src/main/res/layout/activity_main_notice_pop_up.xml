@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/main_notice_pop_up"
+    android:paddingBottom="130dp"
+    android:paddingTop="130dp"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp"
+    android:background="#88414040"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/cwnu_main_color5"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:weightSum="1"
+        >
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="50dp">
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="공지사항/와글알림"
+                android:textSize="6pt"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:gravity="center"/>
+        </LinearLayout>
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="30dp"
+            android:background="@color/cwnu_main_color3"
+            android:text="확인"
+            android:textColor="@color/cwnu_main_color9"
+            android:textSize="4pt"
+            android:id="@+id/notice_info_button" />
+
+    </LinearLayout>
+
+
+    <ListView
+        android:background="@color/cwnu_main_color10"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/notice_info_ListView">
+
+    </ListView>
+
+</LinearLayout>

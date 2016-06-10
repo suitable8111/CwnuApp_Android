@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="250dp"
+    android:orientation="vertical"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:paddingTop="7dp"
+    android:paddingBottom="8dp"
+    android:background="@color/cwnu_main_color11"
+    >
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:id="@+id/bf_cell_imageView"
+        android:background="@color/cwnu_main_color8">
+    </ImageView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_weight="1"
+        android:orientation="horizontal"
+        android:padding="5dp"
+        android:background="@color/cwnu_main_color10">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="40dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:text="타입"
+                android:textColor="@color/cwnu_main_color9"
+                android:id="@+id/bf_cell_type_textview"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:textSize="8pt"
+                android:layout_height="20dp"
+                android:text="가게 이름"
+                android:textStyle="bold"
+                android:textColor="@color/cwnu_main_color9"
+                android:id="@+id/bf_cell_title_textview"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="150dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:gravity="bottom">
+            <ImageView
+                android:clickable="true"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:textColor="@color/cwnu_main_color9"
+                android:id="@+id/bf_cell_phoen_button"
+                android:background="@drawable/phone_call_icon"/>
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="20dp"
+                />
+            <ImageView
+
+                android:clickable="true"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:id="@+id/bf_cell_good_button"
+                android:background="@drawable/not_good_btn"/>
+            <TextView
+                android:layout_marginLeft="3dp"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="20dp"
+                android:textSize="5pt"
+                android:textColor="@color/cwnu_main_color9"
+                android:text="좋아요 수"
+                android:id="@+id/bf_cell_good_count_textview"/>
+            <!--<ImageView-->
+                <!--android:clickable="true"-->
+                <!--android:layout_width="25dp"-->
+                <!--android:layout_height="25dp"-->
+                <!--android:id="@+id/bf_cell_bad_button"-->
+                <!--android:background="@drawable/not_good_btn"/>-->
+            <!--<TextView-->
+                <!--android:layout_marginLeft="3dp"-->
+                <!--android:layout_width="0dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_height="20dp"-->
+                <!--android:textSize="5pt"-->
+                <!--android:textColor="@color/cwnu_main_color9"-->
+                <!--android:text="별로에요 수"-->
+                <!--android:id="@+id/bf_cell_bad_count_textview"/>-->
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+
+
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="100dp"-->
+        <!--android:orientation="horizontal"-->
+        <!-->-->
+
+        <!--<Button-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:text="좋아요"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:id="@+id/bf_cell_good_button"/>-->
+        <!--<Button-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:text="나빠욧"-->
+            <!--android:id="@+id/bf_cell_bad_button"/>-->
+
+    <!--</LinearLayout>-->
+
+</LinearLayout>

@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/cwnu_main_color10"
+    tools:context=".bus.TrafficInfoActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/cwnu_main_color5"
+        android:padding="7dp"
+        android:weightSum="1"
+        >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="교통 정보"
+                android:textSize="7pt"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:gravity="center" />
+
+    </LinearLayout>
+
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/sliding_tabs_traffic"
+        android:background="@color/cwnu_main_color5"
+        style="@style/MyCustomTabLayout"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager_trafiic"
+        android:layout_height="0dp"
+        android:layout_width="wrap_content"
+        android:layout_weight="10"/>
+
+
+</LinearLayout>

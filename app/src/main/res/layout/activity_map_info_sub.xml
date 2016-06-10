@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/cwnu_main_color5"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:weightSum="1"
+        >
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="50dp">
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="교내 지도 정보"
+                android:textSize="7pt"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:gravity="center"/>
+        </LinearLayout>
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:background="@color/cwnu_main_color3"
+            android:text="내 위치"
+            android:textColor="@color/cwnu_main_color9"
+            android:textSize="5pt"
+            android:id="@+id/mapinfo_find_me_button" />
+
+    </LinearLayout>
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:weightSum="10"
+        android:paddingTop="10dp"
+        android:paddingRight="10dp"
+        android:paddingLeft="10dp"
+        android:paddingBottom="10dp"
+        >
+
+        <EditText
+            android:background="@color/cwnu_main_color10"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="10"
+            android:textColor="@color/cwnu_main_color9"
+            android:textSize="5pt"
+            android:id="@+id/mapinfo_search_text"
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:hint="건물명, 이름을 입력하세요"
+            />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.5">
+
+    </LinearLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="4.5"
+        android:background="@color/cwnu_main_color8"
+        android:id="@+id/mapinfo_listView"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        />
+
+
+</LinearLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:gravity="center"
+    >
+
+    <com.android.volley.toolbox.NetworkImageView
+        android:layout_weight="0.0"
+        android:id="@+id/background"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_image_01" />
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="center">
+
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/kakao_user_profile_imageView"
+            android:background="@drawable/profile_default_image"
+            />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/profile_description_realname"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="이름란"
+        android:textStyle="bold"
+        android:gravity="center"
+        android:textSize="6pt"
+        android:textColor="@color/cwnu_main_color9" />
+    <TextView
+        android:id="@+id/profile_description_schoolnum"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:text="바코드 설정을 눌러 학생증을 추가하세요"
+        android:gravity="center"
+        android:textSize="6pt"
+        android:textColor="@color/cwnu_main_color9" />
+
+    <ImageView
+        android:background="@drawable/profile_line"
+        android:layout_width="37dp"
+        android:layout_height="6dp"
+        />
+    <ImageView
+        android:layout_margin="15dp"
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:id="@+id/user_school_barcode_imageView"
+        />
+
+</LinearLayout>

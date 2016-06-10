@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="10"
+    android:background="@color/cwnu_main_color11"
+    tools:context="com.yeho.cwnuapp.sf.SchoolFoodsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/cwnu_main_color5"
+        android:padding="7dp"
+        android:weightSum="1"
+        >
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="30dp">
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="오늘 날짜"
+                android:textSize="7pt"
+                android:textStyle="bold"
+                android:textColor="#ffffff"
+                android:gravity="center"
+                android:id="@+id/sf_date_textview"/>
+        </LinearLayout>
+        <Button
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/food_select_date_icon"
+            android:id="@+id/sf_date_setting_button" />
+
+    </LinearLayout>
+
+
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/sliding_tabs"
+        android:background="@color/cwnu_main_color5"
+        style="@style/MyCustomTabLayout"/>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_height="0dp"
+        android:layout_width="wrap_content"
+        android:layout_weight="10"/>
+
+</LinearLayout>

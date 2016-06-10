@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/map_info_search_phone_pop_up"
+    android:paddingBottom="130dp"
+    android:paddingTop="130dp"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp"
+    android:background="#88414040"
+    android:weightSum="10">
+
+    <TextView
+        android:background="@color/cwnu_main_color11"
+        android:textColor="@color/cwnu_main_color9"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:text="총 0건의 전화번호가 검색 되었습니다."
+        android:gravity="center"
+        android:id="@+id/map_info_search_phone_count_textView"/>
+    <ListView
+        android:background="@color/cwnu_main_color11"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:id="@+id/map_info_search_phone_ListView">
+
+    </ListView>
+
+    <Button
+        android:background="@color/cwnu_main_color11"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:text="취소"
+        android:id="@+id/map_info_search_phone_cancel_button"/>
+
+</LinearLayout>

@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cwnu_main_color10"
+    tools:context="com.yeho.cwnuapp.board.free.BoardDetailActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@color/cwnu_main_color5"
+        android:padding="5dp"
+        android:weightSum="1"
+        >
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent">
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="제목란"
+                android:textColor="#ffffff"
+                android:textSize="8pt"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:id="@+id/free_board_detail_title_text"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="50dp">
+
+            <Button
+                android:layout_margin="10dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/good_icon_white_board_detail"
+                android:id="@+id/free_board_detail_add_good_button" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ScrollView
+        android:id="@+id/ScrollviewDetail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="70dp"
+                android:layout_height="70dp"
+                android:id="@+id/free_board_detail_imageview" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:padding="10dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:text="글쓴이"
+                    android:textSize="7pt"
+                    android:textColor="#000000"
+                    android:id="@+id/free_board_detail_name_text" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="15dp"
+                    android:orientation="horizontal"
+                    >
+
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="2"
+                        android:layout_height="match_parent"
+                        android:textSize="5pt"
+                        android:textColor="@color/cwnu_main_color9"
+                        android:text="시간"
+                        android:id="@+id/free_board_detail_post_time_text" />
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textSize="5pt"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/cwnu_main_color9"
+                        android:textStyle="bold"
+                        android:text="댓글"
+                        android:id="@+id/free_board_detail_comment_count_text"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_weight="1"
+                        android:textSize="5pt"
+                        android:layout_height="match_parent"
+                        android:textColor="@color/cwnu_main_color9"
+                        android:textStyle="bold"
+                        android:text="좋아요"
+                        android:id="@+id/free_board_detail_good_count_text"
+                        />
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="6pt"
+            android:text="게시판 내용"
+            android:textColor="#000000"
+            android:id="@+id/free_board_detail_content_text" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#000000"
+        ></View>
+
+        <ListView
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:id="@+id/board_detail_listView"
+        />
+
+    </LinearLayout>
+    </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

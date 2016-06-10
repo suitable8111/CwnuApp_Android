@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="55dp"
+    android:weightSum="2"
+    android:background="@color/cwnu_main_color11">
+
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="55dp"
+        android:text="장소"
+        android:textSize="7pt"
+        android:paddingTop="10dp"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:id="@+id/mi_cell_textView_room_name"
+        android:textColor="@color/cwnu_main_color9"
+        android:layout_weight="1.5"/>
+    <TextView
+        android:layout_width="0dp"
+        android:textSize="7pt"
+        android:layout_height="55dp"
+        android:paddingTop="10dp"
+        android:text="층수"
+        android:layout_gravity="center"
+        android:textAlignment="center"
+        android:textColor="@color/cwnu_main_color9"
+        android:id="@+id/mi_cell_textView_floor_num"
+        android:layout_weight="0.5"/>
+
+</LinearLayout>

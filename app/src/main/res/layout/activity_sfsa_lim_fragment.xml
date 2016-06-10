@@ -1,0 +1,207 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="com.yeho.cwnuapp.sf.SFSaLimFragment"
+    android:weightSum="3"
+    >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:weightSum="2">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingRight="5dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:weightSum="5">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="6pt"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:text="양식"
+                android:textColor="#000000"
+                android:background="#ffffff"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:textSize="6pt"
+                android:text="양식 메뉴"
+                android:paddingLeft="5dp"
+                android:id="@+id/sf_sa_yf_text"
+                android:textColor="#000000"
+                android:background="#ffffff"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingRight="5dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="6pt"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:text="한식"
+                android:textColor="#000000"
+                android:background="#ffffff"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:textSize="6pt"
+                android:text="한식 메뉴"
+                android:paddingLeft="5dp"
+                android:id="@+id/sf_sa_kf_text"
+                android:textColor="#000000"
+                android:background="#ffffff"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        >
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingRight="5dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:weightSum="5">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="6pt"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:text="정식 점심"
+                android:textColor="#000000"
+                android:background="#ffffff"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:textSize="6pt"
+                android:text="정식 점심 메뉴"
+                android:paddingLeft="5dp"
+                android:id="@+id/sf_sa_jf_l_text"
+                android:textColor="#000000"
+                android:background="#ffffff"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingRight="5dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:weightSum="5">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="6pt"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:text="정식 저녁"
+                android:textColor="#000000"
+                android:background="#ffffff"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:textSize="6pt"
+                android:text="정식 저녁 메뉴"
+                android:paddingLeft="5dp"
+                android:id="@+id/sf_sa_jf_d_text"
+                android:textColor="#000000"
+                android:background="#ffffff"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:paddingRight="5dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:textSize="6pt"
+                android:paddingLeft="5dp"
+                android:paddingTop="2dp"
+                android:text="분식"
+                android:textColor="#000000"
+                android:background="#ffffff"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="4"
+                android:textSize="6pt"
+                android:text="분식 메뉴"
+                android:paddingLeft="5dp"
+                android:id="@+id/sf_sa_bf_text"
+                android:textColor="#000000"
+                android:background="#ffffff"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:textSize="5pt"
+        android:gravity="center|top"
+        android:text="운영시간 : 점심(11:30~14:30) , 저녁(17:00~18:30) \n 정식 : 1900 원  덮밥,한식 : 2500원  \n 돈까스 : 2500원 치킨까스 : 2500 라면(해장,만두) : 2000원 공기밥 : 500원 \n\n 알레르기는 개인 체질 등에 따라 발생하는 식품이 다를수 있으니 \n 해당여부를 꼭 확인하여 주시기 바랍니다.\n①난류 ②우유 ③메밀 ④땅콩 ⑤대두 ⑥밀 ⑦고등어 ⑧게 ⑨새우 ⑩돈육 ⑪복숭아 ⑫토마토"
+        android:textColor="@color/cwnu_main_color9" />
+</LinearLayout>

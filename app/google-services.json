@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_id": "cwnuapp-1173",
+    "project_number": "78016239527",
+    "name": "cwnuapp"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:78016239527:android:5232b7e66cd61a83",
+        "client_id": "android:com.yeho.cwnuapp",
+        "client_type": 1,
+        "android_client_info": {
+          "package_name": "com.yeho.cwnuapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "cloud_messaging_service": {
+          "status": 2,
+          "apns_config": []
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "google_signin_service": {
+          "status": 1
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "client_info": [],
+  "ARTIFACT_VERSION": "1"
+}

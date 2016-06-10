@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.yeho.cwnuapp.login.CertificationActivity"
+    android:orientation="vertical"
+    android:id="@+id/certi_Layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+    <LinearLayout
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/icon"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/login_logo"/>
+
+    </LinearLayout>
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="50dp"-->
+        <!--android:background="@color/cwnu_main_color5"-->
+        <!--android:paddingTop="5dp"-->
+        <!--android:paddingBottom="5dp"-->
+        <!--android:paddingLeft="5dp"-->
+        <!--android:paddingRight="5dp"-->
+        <!--android:weightSum="1"-->
+        <!-->-->
+        <!--<LinearLayout-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_width="50dp">-->
+        <!--</LinearLayout>-->
+        <!--<LinearLayout-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1">-->
+            <!--<TextView-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:text="창원대 학생 인증"-->
+                <!--android:textSize="7pt"-->
+                <!--android:textStyle="bold"-->
+                <!--android:textColor="#ffffff"-->
+                <!--android:gravity="center"/>-->
+        <!--</LinearLayout>-->
+        <!-- -->
+
+    <!--</LinearLayout>-->
+
+
+    <EditText
+        android:layout_margin="10dp"
+        android:hint="@string/usermgmg_name"
+        android:textSize="5pt"
+        android:id="@+id/certifitcation_name_editText"
+        style="@style/com_kakao_profile_property_value" />
+    <EditText
+        android:layout_margin="10dp"
+        android:hint="@string/usermgmg_phone"
+        android:textSize="5pt"
+        android:id="@+id/certifitcation_phone_editText"
+        style="@style/com_kakao_profile_property_value" />
+
+    <Button
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:background="@color/cwnu_main_color5"
+        android:text="확인"
+        android:textColor="@color/cwnu_main_color10"
+        android:textSize="5pt"
+        android:id="@+id/certifitcation_confirm_button" />
+
+    <!--<Button-->
+        <!--android:layout_margin="15dp"-->
+        <!--android:id="@+id/certifitcation_barcode_button"-->
+        <!--android:background="@color/cwnu_main_color3"-->
+        <!--android:text="학생증(바코드) 인증 버튼"-->
+        <!--android:textColor="@color/cwnu_main_color9"-->
+        <!--android:gravity="center"-->
+        <!--android:textSize="6pt"-->
+        <!--android:layout_height="55dp"-->
+        <!--android:layout_width="match_parent"/>-->
+
+
+    <!--<EditText-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:hint="@string/usermgmg_schoolnum"-->
+        <!--android:textSize="7pt"-->
+        <!--android:id="@+id/certifitcation_schoolnum_editText"-->
+        <!--style="@style/com_kakao_profile_property_value"-->
+        <!--/>-->
+    <!--<EditText-->
+        <!--android:layout_marginTop="8dp"-->
+        <!--android:hint="@string/usermgmg_birth"-->
+        <!--android:textSize="7pt"-->
+        <!--android:id="@+id/certifitcation_birth_editText"-->
+        <!--style="@style/com_kakao_profile_property_value"-->
+        <!--/>-->
+
+</LinearLayout>

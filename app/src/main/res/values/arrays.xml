@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Copyright (C) 2008 ZXing authors
+
+ Licensed under the Apache License, Version 2.0 (the "License");
+ you may not use this file except in compliance with the License.
+ You may obtain a copy of the License at
+
+      http://www.apache.org/licenses/LICENSE-2.0
+
+ Unless required by applicable law or agreed to in writing, software
+ distributed under the License is distributed on an "AS IS" BASIS,
+ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ See the License for the specific language governing permissions and
+ limitations under the License.
+ -->
+<resources xmlns:tools="http://schemas.android.com/tools">
+  <string-array name="country_codes" tools:ignore="MissingTranslation">
+    <item>-</item>
+    <item>AR</item>
+    <item>AU</item>
+    <item>BR</item>
+    <item>BG</item>
+    <item>CA</item>
+    <item>CH</item>
+    <item>CN</item>
+    <item>CZ</item>
+    <item>DE</item>
+    <item>DK</item>
+    <item>ES</item>
+    <item>FI</item>
+    <item>FR</item>
+    <item>GB</item>
+    <item>GR</item>
+    <item>HU</item>
+    <item>ID</item>
+    <item>IT</item>
+    <item>JP</item>
+    <item>KR</item>
+    <item>NL</item>
+    <item>PL</item>
+    <item>PT</item>
+    <item>RO</item>    
+    <item>RU</item>
+    <item>SE</item>
+    <item>SK</item>
+    <item>SI</item>
+    <item>TR</item>
+    <item>TW</item>
+    <item>US</item>
+  </string-array>
+  <string-array name="preferences_front_light_values" tools:ignore="MissingTranslation">
+    <item>ON</item>
+    <item>AUTO</item>
+    <item>OFF</item>
+  </string-array>
+  <string-array name="preferences_front_light_options">
+    <item>@string/preferences_front_light_on</item>
+    <item>@string/preferences_front_light_auto</item>
+    <item>@string/preferences_front_light_off</item>
+  </string-array>
+    <array name="mark_structure_res">
+        <item>@drawable/mark1</item>
+        <item>@drawable/mark2</item>
+        <item>@drawable/mark4</item>
+        <item>@drawable/mark4</item>
+        <item>@drawable/mark5</item>
+        <item>@drawable/mark6</item>
+        <item>@drawable/mark7</item>
+        <item>@drawable/mark8</item>
+        <item>@drawable/mark11</item>
+        <item>@drawable/mark21</item>
+        <item>@drawable/mark22</item>
+        <item>@drawable/mark31</item>
+        <item>@drawable/mark32</item>
+        <item>@drawable/mark33</item>
+        <item>@drawable/mark34</item>
+        <item>@drawable/mark35</item>
+        <item>@drawable/mark50</item>
+        <item>@drawable/mark51</item>
+        <item>@drawable/mark52</item>
+        <item>@drawable/mark53</item>
+        <item>@drawable/mark54</item>
+        <item>@drawable/mark55</item>
+        <item>@drawable/mark61</item>
+        <item>@drawable/mark62</item>
+        <item>@drawable/mark63</item>
+        <item>@drawable/mark70</item>
+        <item>@drawable/mark71</item>
+        <item>@drawable/mark72</item>
+        <item>@drawable/mark73</item>
+        <item>@drawable/mark74</item>
+        <item>@drawable/mark75</item>
+        <item>@drawable/mark76</item>
+        <item>@drawable/mark81</item>
+        <item>@drawable/mark82</item>
+        <item>@drawable/mark83</item>
+        <item>@drawable/mark85</item>
+        <item>@drawable/mark86</item>
+        <item>@drawable/mark87</item>
+        <item>@drawable/mark89</item>
+        <item>@drawable/mark91</item>
+        <item>@drawable/mark92</item>
+        <item>@drawable/mark93</item>
+        <item>@drawable/mark94</item>
+        <item>@drawable/mark96</item>
+
+    </array>
+</resources>

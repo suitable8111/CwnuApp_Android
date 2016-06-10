@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cwnu_main_color11"
+    tools:context="com.yeho.cwnuapp.bf.BestFoodDetailActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/cwnu_main_color5"
+        android:padding="5dp"
+        android:weightSum="1"
+        >
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent">
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="식당 타입"
+                android:textColor="#ffffff"
+                android:textSize="8pt"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:id="@+id/best_food_detail_title"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="50dp">
+            <Button
+                android:layout_width="50dp"
+                android:layout_height="40dp"
+                android:text="메뉴보기"
+                android:textSize="5pt"
+                android:background="@color/cwnu_main_color3"
+                android:id="@+id/best_food_detail_menu_Button"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+    <ViewFlipper
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:id="@+id/best_food_detail_viewFlipper"
+        android:background="@color/cwnu_main_color8"
+        android:flipInterval="2000">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:id="@+id/best_food_detail_out_door_imageView"/>
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:id="@+id/best_food_detail_in_door_imageView"/>
+    </ViewFlipper>
+
+
+    <android.support.design.widget.TabLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/sliding_tabs_best_food"
+        style="@style/MyCustomTabLayoutBestFood"/>
+
+    <android.support.v4.view.ViewPager
+        android:layout_margin="9dp"
+        android:id="@+id/pager_best_food"
+        android:layout_height="0dp"
+        android:layout_width="wrap_content"
+        android:layout_weight="10"/>
+
+</LinearLayout>

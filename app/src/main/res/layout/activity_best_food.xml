@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/cwnu_main_color11"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="1"
+    tools:context="com.yeho.cwnuapp.bf.BestFoodActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/cwnu_main_color5"
+        android:padding="5dp"
+        android:weightSum="1"
+        >
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent">
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="대학로 Beta"
+                android:textColor="#ffffff"
+                android:textSize="8pt"
+                android:textStyle="bold"
+                android:gravity="center"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_height="match_parent"
+            android:layout_width="50dp">
+            <Button
+                android:layout_margin="10dp"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/search_icon"
+                android:id="@+id/best_food_search_button" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/cwnu_main_color5"
+        android:gravity="center">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:background="@color/transparent"
+        android:orientation="horizontal"
+        android:weightSum="4"
+        >
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="식당"
+            android:background="@color/transparent"
+            android:textColor="@color/cwnu_main_color10"
+            android:id="@+id/best_food_type_cafeteria"/>
+        <View
+            android:layout_gravity="center"
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:background="@color/cwnu_main_color10"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="배달"
+            android:background="@color/transparent"
+            android:textColor="@color/cwnu_main_color10"
+            android:id="@+id/best_food_type_delivery"/>
+        <View
+            android:layout_gravity="center"
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:background="@color/cwnu_main_color10"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="커피"
+            android:background="@color/transparent"
+            android:textColor="@color/cwnu_main_color10"
+            android:id="@+id/best_food_type_coffee"
+            />
+        <View
+            android:layout_gravity="center"
+            android:layout_width="1dp"
+            android:layout_height="20dp"
+            android:background="@color/cwnu_main_color10"
+            />
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="주점"
+            android:background="@color/transparent"
+            android:textColor="@color/cwnu_main_color10"
+            android:id="@+id/best_food_type_bar"/>
+
+    </LinearLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@color/cwnu_main_color5"
+        android:padding="7dp"
+        android:weightSum="1"
+        android:id="@+id/best_food_searchLayout"
+        >
+        <EditText
+            android:imeOptions="actionSearch"
+            android:inputType="text"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textSize="5pt"
+            android:background="@color/cwnu_main_color10"
+            android:id="@+id/best_food_search_editText"
+            android:hint="ex) 가게이름, 종류"/>
+    </LinearLayout>
+
+    <ListView
+        android:divider="@color/cwnu_main_color11"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:id="@+id/best_food_listView" />
+</LinearLayout>

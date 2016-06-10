@@ -1,0 +1,65 @@
+apply plugin: 'com.android.application'
+apply plugin: 'com.google.gms.google-services'
+
+android {
+    compileSdkVersion 23
+    buildToolsVersion "22.0.1"
+    signingConfigs {
+        release {
+            storeFile file("ketStore/cwnuapp.jks")
+            storePassword "rhddb1!AS@"
+            keyAlias "yeho"
+            keyPassword "rhddb1!AS@"
+        }
+//        debug {
+//            storeFile file("ketStore/cwnuapp_debug.jks")
+////      storePassword "android"
+////      keyAlias "androiddebugkey"
+////      keyPassword "android"
+//        }
+    }
+    defaultConfig {
+        applicationId "com.yeho.cwnuapp"
+        multiDexEnabled true
+        minSdkVersion 15
+        targetSdkVersion 23
+        versionCode 15
+        versionName "1.15"
+    }
+    buildTypes {
+//        debug {
+//            signingConfig signingConfigs.debug
+//        }
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+            signingConfig signingConfigs.release
+        }
+        debug {
+            signingConfig signingConfigs.release
+        }
+    }
+    packagingOptions {
+        exclude 'META-INF/LICENSE'
+        exclude 'META-INF/NOTICE'
+    }
+
+    useLibrary 'org.apache.http.legacy'
+}
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+    testCompile 'junit:junit:4.12'
+    compile 'com.android.support:appcompat-v7:23.1.1'
+    compile 'com.android.support:design:23.1.1'
+    compile 'net.htmlparser.jericho:jericho-html:3.4'
+    compile 'com.google.android.gms:play-services-analytics:8.4.0'
+    compile 'com.google.android.gms:play-services-gcm:8.4.0'
+    compile 'com.google.android.gms:play-services-location:8.4.0'
+    compile 'com.google.android.gms:play-services-plus:8.4.0'
+    compile 'com.tsengvn:Typekit:1.0.0'
+    compile project(':volley')
+    compile files('libs/core-3.2.1.jar')
+    compile project(':pulltorefresh')
+    compile group: project.KAKAO_SDK_GROUP, name: 'usermgmt', version: project.KAKAO_SDK_VERSION
+}

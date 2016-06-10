@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/sf_school_food_date_pop_up_element"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:paddingBottom="150dp"
+    android:paddingTop="150dp"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp"
+    android:background="#88414040"
+    android:orientation="vertical"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:background="@color/cwnu_main_color5"
+        android:layout_width="match_parent"
+        android:layout_height="25dp"
+        android:orientation="horizontal"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"></LinearLayout>
+
+        <Button
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:background="@drawable/cancel_icon"
+            android:id="@+id/sf_pop_up_cancel_button"/>
+
+    </LinearLayout>
+
+
+    <ListView
+        android:background="@color/cwnu_main_color5"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:id="@+id/sf_food_date_pop_up_listView"
+        android:layout_gravity="center"
+        android:layout_weight="1"/>
+
+</LinearLayout>

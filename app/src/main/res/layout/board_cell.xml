@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp"
+    android:orientation="horizontal"
+    android:background="@color/cwnu_main_color10"
+    android:padding="5dp"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        >
+
+        <ImageView
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/board_cell_thumbnail_imageView"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="32dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_marginLeft="3dp"
+            android:paddingTop="8dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:textSize="5pt"
+            android:textColor="@color/cwnu_main_color9"
+            android:text="제목 레이블"
+            android:textStyle="bold"
+            android:id="@+id/board_cell_title_textView"
+            />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:orientation="horizontal"
+            >
+        </LinearLayout>
+
+        <ImageView
+            android:clickable="true"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/profile_update_icon"
+            android:id="@+id/board_cell_update_button" />
+
+        <ImageView
+            android:clickable="true"
+            android:layout_width="22dp"
+            android:layout_height="22dp"
+            android:layout_margin="4dp"
+            android:background="@drawable/profile_exit_icon"
+            android:id="@+id/board_cell_delete_button" />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="250dp"
+        android:layout_height="10dp"
+        android:orientation="horizontal"
+        >
+
+        <TextView
+            android:gravity="center|left"
+            android:layout_marginLeft="3dp"
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:textSize="4pt"
+            android:textColor="@color/cwnu_main_color9"
+            android:text="작성자"
+            android:id="@+id/board_cell_name_textView"
+        />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/cwnu_main_color12"
+            ></View>
+        <TextView
+            android:gravity="center"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:textSize="4pt"
+            android:textColor="@color/cwnu_main_color9"
+            android:text="시간"
+            android:id="@+id/board_cell_posttime_textView" />
+        <View
+            android:layout_width="1dp"
+            android:layout_height="match_parent"
+            android:background="@color/cwnu_main_color12"
+            ></View>
+        <TextView
+            android:gravity="center"
+            android:layout_width="80dp"
+            android:layout_height="match_parent"
+            android:textSize="4pt"
+            android:textColor="@color/cwnu_main_color9"
+            android:text="조회수"
+            android:id="@+id/board_cell_viewcount_textView" />
+
+        <!--<TextView-->
+            <!--android:gravity="bottom"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:textSize="4pt"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:textColor="@color/cwnu_main_color9"-->
+            <!--android:text="댓글"-->
+            <!--android:id="@+id/board_cell_comment_count_textView" />-->
+        <!--<TextView-->
+            <!--android:gravity="bottom"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:textSize="4pt"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:textColor="@color/cwnu_main_color9"-->
+            <!--android:text="좋아요"-->
+            <!--android:id="@+id/board_cell_good_count_textView" />-->
+
+    </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

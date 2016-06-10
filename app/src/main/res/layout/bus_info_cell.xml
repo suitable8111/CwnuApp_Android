@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:orientation="vertical"
+    android:background="#ffffff"
+    android:weightSum="2"
+    android:padding="10dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:id="@+id/bus_info_cell_title_textview"
+            android:textColor="#000000"
+            android:text="버스 정류장 이름"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:textColor="@color/cwnu_main_color8"
+        android:text="버스 위치 정보"
+        android:id="@+id/bus_info_cell_bus_pos_textview"
+        android:layout_gravity="center_vertical" />
+</LinearLayout>

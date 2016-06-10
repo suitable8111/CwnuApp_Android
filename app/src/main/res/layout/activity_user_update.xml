@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/cwnu_main_color5"
+    tools:context="com.yeho.cwnuapp.login.UserUpdateActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:weightSum="1"
+        >
+        <LinearLayout
+            android:layout_width="50dp"
+            android:layout_height="match_parent">
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="프로필 수정"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:gravity="center"/>
+        </LinearLayout>
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="40dp"
+            android:background="@color/cwnu_main_color3"
+            android:text="확인"
+            android:textSize="5pt"
+            android:id="@+id/user_update_confirm_button" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:textColor="#ffffff"
+        android:text="사진 올리기(이미지를 클릭해주세요)"
+        android:gravity="center"/>
+    <ImageButton
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/user_update_profile_imageButton"
+        android:layout_gravity="center_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="6pt"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:text="별명"
+            android:layout_marginRight="10dp"/>
+        <EditText
+            android:hint="@string/usermgmg_nickname"
+            android:textSize="7pt"
+            android:id="@+id/user_update_nickname_editText"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="9"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:textSize="6pt"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:text="학번"
+            android:layout_marginRight="10dp"/>
+
+        <Button
+            android:id="@+id/user_update_barcode_button"
+            android:background="@color/cwnu_main_color3"
+            android:text="학생증(바코드) 인증 버튼"
+            android:textColor="@color/cwnu_main_color9"
+            android:gravity="center"
+            android:textSize="6pt"
+            android:layout_height="match_parent"
+            android:layout_width="0dp"
+            android:layout_weight="9"/>
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
